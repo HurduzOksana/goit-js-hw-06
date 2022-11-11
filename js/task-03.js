@@ -60,7 +60,7 @@ const makeGalleryCard = ({ url, alt } = {}) => {
   // 2.Створюємо шаблонний рядок
   return `
   <li>
-  <img src="${url}" alt="${alt}">
+  <img src="${url}" alt="${alt} width="200" height="200"/>
   </li>
   `
 };
@@ -73,3 +73,4 @@ console.log(galleryCardContainer);
 
 galleryList.insertAdjacentHTML(`afterend`, galleryCardContainer.join(``));
 galleryList.style.display = 'flex';
+galleryList.style.listStyle = 'none';

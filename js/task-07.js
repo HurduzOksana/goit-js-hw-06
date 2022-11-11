@@ -16,8 +16,7 @@ userInput.addEventListener(`input`, changeTextSize);
 // 3.Створюємо функцію 
 
 function changeTextSize(event) {
-    // Достукатись до значення розміру інпуту 
-    const inputValue = input.value;
+    
     // Прирівняти розмір тексту до значення інпуту
-    userTextSpan.style.size = inputValue;
+    userTextSpan.style.fontSize = `${userInput.value}px`;
 }
