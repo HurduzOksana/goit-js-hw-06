@@ -14,8 +14,10 @@ function getRandomHexColor() {
 
 // Створити доступ до боді
 const bodyEl = document.querySelector(`body`);
+
 // Створити доступ до кнопки
 const buttonEl = document.querySelector(`.change-color`);
+
 // Створити доступ до спану
 const spanEl = document.querySelector(`.color`);
 

@@ -23,20 +23,18 @@
 const form = document.querySelector(`.login-form`);
     
 // 2.Додаємо слухача події
-
 form.addEventListener(`submit`, onFormSubmit);
 
 // 3.Створюємо функцію обробки підписки
 
 function onFormSubmit(event) {
+
 //  Уникаємо перезавантаженню сторінки
     event.preventDefault();
 
 // Збираємо значення полів в об'єкт 
 
-    const {
-        elements: { email, password }
-    } = event.currentTarget;
+    const {elements: { email, password }} = event.currentTarget;
     
     if (email.value === "" && password.value === "") {
         return alert("Not all fields are filled!");
