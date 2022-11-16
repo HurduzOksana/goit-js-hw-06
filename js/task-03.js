@@ -74,7 +74,7 @@ console.log(galleryCardContainer);
 galleryList.insertAdjacentHTML(`afterbegin`, galleryCardContainer.join(``));
 
 // Додаємо стилі 
-galleryList.style.display = "flex";
-galleryList.style.gap = `30px`;
-galleryList.style.listStyle = "none";
-galleryList.style.justifyContent = "center";
+// galleryList.style.display = "flex";
+// galleryList.style.gap = `30px`;
+// galleryList.style.listStyle = "none";
+// galleryList.style.justifyContent = "center";

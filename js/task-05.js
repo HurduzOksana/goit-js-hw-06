@@ -14,6 +14,8 @@ userTextInput.addEventListener(`input`, onInputChange)
 
 // 4.Створюємо функцію для зміни значення в спані
 function onInputChange(event) {
-    console.log(event.currentTarget.value);
-    userTextOutput.textContent = event.currentTarget.value;
+    if (userTextInput.value !== ``) {
+        return userTextOutput.textContent = userTextInput.value;
+    }
+    return userTextOutput.textContent = `Anonymous`;
 }

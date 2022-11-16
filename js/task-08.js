@@ -36,7 +36,7 @@ function onFormSubmit(event) {
 
     const {elements: { email, password }} = event.currentTarget;
     
-    if (email.value === "" && password.value === "") {
+    if (email.value === `` || password.value === ``) {
         return alert("Not all fields are filled!");
     }
     
